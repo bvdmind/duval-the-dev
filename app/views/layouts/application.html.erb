@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DuvalTheDev</title>
+    <title>Duval The Dev.</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,11 +12,18 @@
   <body>
     <section class="hero is-light is-fullheight">
       <%= render 'layouts/navbar' %>
+
       <div class="hero-body">
         <div class="container">
-          <%= yield %>
+          <div class="columns is-centered">
+            <div class="column is-one-third">
+              <%= render 'layouts/flash_message' %>
+              <%= yield %>
+            </div>
+          </div>
         </div>
       </div>
+      
       <%= render 'layouts/footer' %>
     </section>
   </body>

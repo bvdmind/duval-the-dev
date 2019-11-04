@@ -18,7 +18,7 @@ class PagesController < ApplicationController
 
     respond_to do |format|
       if @contact_form.deliver
-        format.html { redirect_to :root, notice: "Thank you." }
+        format.html { redirect_to :root, notice: "Thank you, i will reply to you as soon as possible." }
       else
         format.html { render :contact, notice: "Something went wrong, please try again." }
       end
