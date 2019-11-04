@@ -10,13 +10,14 @@
   </head>
 
   <body>
-    <section class="hero is-fullheight-with-navbar">
+    <section class="hero is-light is-fullheight">
       <%= render 'layouts/navbar' %>
       <div class="hero-body">
         <div class="container">
           <%= yield %>
         </div>
       </div>
+      <%= render 'layouts/footer' %>
     </section>
   </body>
 </html>
