@@ -1,13 +1,13 @@
-<div class="columns">
-  <div class="column is-half">
-    Empty for now.
-  </div>
-  <div class="column is-half">
-    <div class="columns">
-      <div class="column">
-        <%= render 'layouts/flash_message' %>
-        <%= yield %>
-      </div>
+<div class="column is-half">
+  <figure class="image">
+    <%= image_tag random_image_helper %>
+  </figure>
+</div>
+<div class="column is-half">
+  <div class="columns">
+    <div class="column">
+      <%= render 'layouts/flash_message' %>
+      <%= yield %>
     </div>
   </div>
 </div>

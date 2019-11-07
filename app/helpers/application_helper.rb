@@ -16,4 +16,12 @@ module ApplicationHelper
     variations = [render("layouts/main_left"), render("layouts/main_right")]
     variations.sample
   end
+
+  def random_image_helper
+    images = ["picture_1.png", "picture_2.png",
+              "picture_3.png", "picture_4.png",
+              "picture_5.png", "picture_6.png",
+              "picture_7.png"]
+    images.sample
+  end
 end

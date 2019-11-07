@@ -1,13 +1,13 @@
-<div class="columns">
-  <div class="column is-half">
-    <%= render 'layouts/flash_message' %>
-    <%= yield %>
-  </div>
-  <div class="column is-half">
-    <div class="columns">
-      <div class="column is-8 is-offset-2">
-        Empty for now.
-      </div>
+<div class="column is-half has-text-centered">
+  <%= render 'layouts/flash_message' %>
+  <%= yield %>
+</div>
+<div class="column is-half">
+  <div class="columns">
+    <div class="column is-centered">
+      <figure class="image">
+        <%= image_tag random_image_helper %>
+      </figure>
     </div>
   </div>
 </div>
