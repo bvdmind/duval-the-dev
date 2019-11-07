@@ -3,13 +3,13 @@
     <div class="container">
       <div class="navbar-brand">
         <%= link_to "Duval the Dev.", root_path, class: "navbar-item #{active? root_path}" %>
-        <span class="navbar-burger burger" data-target="navbarMenuHeroC">
+        <span class="navbar-burger burger" data-target="main-nav">
           <span></span>
           <span></span>
           <span></span>
         </span>
       </div>
-      <div id="navbarMenuHeroC" class="navbar-menu">
+      <div id="main-nav" class="navbar-menu">
         <div class="navbar-end">
           <%= link_to "About", pages_about_path, class: "navbar-item #{active? pages_about_path}" %>
           <%= link_to "Stack", pages_skillset_path, class: "navbar-item #{active? pages_skillset_path}" %>
