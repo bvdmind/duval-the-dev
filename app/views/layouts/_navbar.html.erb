@@ -2,7 +2,7 @@
   <header class="navbar">
     <div class="container">
       <div class="navbar-brand">
-        <%= link_to "Duval the Dev.", root_path, class: "navbar-item" %>
+        <%= link_to "Duval the Dev.", root_path, class: "navbar-item #{active? root_path}" %>
         <span class="navbar-burger burger" data-target="navbarMenuHeroC">
           <span></span>
           <span></span>
@@ -11,9 +11,9 @@
       </div>
       <div id="navbarMenuHeroC" class="navbar-menu">
         <div class="navbar-end">
-          <%= link_to "About", pages_about_path, class: "navbar-item" %>
-          <%= link_to "Stack", pages_skillset_path, class: "navbar-item" %>
-          <%= link_to "Contact", pages_contact_path, class: "navbar-item" %>
+          <%= link_to "About", pages_about_path, class: "navbar-item #{active? pages_about_path}" %>
+          <%= link_to "Stack", pages_skillset_path, class: "navbar-item #{active? pages_skillset_path}" %>
+          <%= link_to "Contact", pages_contact_path, class: "navbar-item #{active? pages_contact_path}" %>
 
           <span class="navbar-item">
             <%= link_to "Github", "http://github.com/bvdmind/", class: "button is-success is-rounded is-inverted" %>

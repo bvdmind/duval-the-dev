@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def flash_class(level)
+  def flash_class level
     case level
       when "notice" then "is-primary"
       when "success" then "is-success"
@@ -23,5 +23,9 @@ module ApplicationHelper
               "picture_5.png", "picture_6.png",
               "picture_7.png"]
     images.sample
+  end
+
+  def active? path
+    "is-active" if current_page? path
   end
 end
